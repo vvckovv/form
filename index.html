@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dybanic Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>
+                Dynamic Form
+            </h2>
+            <p>
+                API Based Forms
+            </p>
+        </div>
+        <form id="form">
+            <div class="email">
+                <label>
+                    <label for="fname">Email</label><br>
+                    <input type="text" id="email" name="fname" placeholder="Enter your email" required>
+                    <p class="err-msg"></p>
+                </label>
+            </div>
+            <div class="password">
+                <label>
+                    <label for="fname">Password</label><br>
+                    <input type="text" id="password" name="fname" placeholder="Enter your password" required>
+                </label>
+            </div>
+            <div class="dob">
+                <label>
+                    <label for="fname">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dob" required>
+                </label>
+            </div>
+            <div class="options">
+                <label>
+                    <label for="fname">Options</label><br>
+                    <select name="select" id="Options required">
+                        <option value="opt-1">Option 1</option>
+                        <option value="opt-1">Option 2</option>
+                        <option value="opt-1">Option 3</option>
+                        <option value="opt-1">Option 4</option>
+                        <option value="opt-1">Option 5</option>
+                    </select>
+                </label>
+            </div>
+            <div class="button">
+                <button class="submit" type="submit" onclick="submit()">SUBMIT</button>
+                <button class="reset" type="reset" onclick="reset()">RESET</button>
+                <button class="cancel" type="cancel" onclick="cancel()">CANCEL</button>
+            </div>
+        </form>
+        <div class="form-result">
+            <h2>
+                Form Output
+            </h2>
+            <div class="form-output">{}</div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
