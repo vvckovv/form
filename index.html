@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>
+                Dynamic Form
+            </h2>
+            <p>
+                API Based Forms
+            </p>
+        </div>
+        <div class="form">
+            <form action="/" id="form">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email" required>
+                <p class="err-msg"></p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="input your password" required>
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" id="date" required>
+                <label for="options">Options</label>
+                <select name="select" id="options">
+                    <option value="opt-1">Option 1</option>
+                    <option value="opt-2">Option 2</option>
+                    <option value="opt-3">Option 3</option>
+                    <option value="opt-4">Option 4</option>
+                    <option value="opt-5">Option 5</option>
+                </select>
+            </form>
+            </div>
+            <div class="button">
+                <button class="submit" type="submit" onclick="submit()">SUBMIT</button>
+                <button class="reset" type="reset" onclick="reset()">RESET</button>
+                <button class="cancel" type="cancel" onclick="cancel()">CANCEL</button>
+            </div>
+            <div class="form-output">
+                <h2>
+                    Form Output
+                </h2>
+                <div class="result">{}</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
