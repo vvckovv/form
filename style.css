@@ -25,7 +25,7 @@ body {
     font-size: 18px;
 }
 
-.email {
+/* .email {
     padding: 0.5em;
 }
 
@@ -78,6 +78,33 @@ body {
     border: 1px solid #606876 ;
     border-radius: 7px;
     color: #A6ADBA;
+} */
+
+.form input, .form select{
+    padding: 12px;
+    margin: 6px 0 15px;
+    background-color: #2A303C;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 100%;
+    color: #A6ADBA;
+    scrollbar-width: none;
+}
+.form select{
+    height: auto;
+    padding: 4px;
+}
+.form select option{
+    padding: 4px 0;
+}
+label{
+    display: flex;
+} 
+.buttons{
+    margin-top: -8px;
+    margin: -6px 15px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .button {

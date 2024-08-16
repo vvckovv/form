@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dybanic Form</title>
+    <title>Dynamic Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,44 +16,31 @@
                 API Based Forms
             </p>
         </div>
-        <form id="form">
-            <div class="email">
-                <label>
-                    <label for="fname">Email</label><br>
-                    <input type="text" id="email" name="fname" placeholder="Enter your email" required>
-                    <p class="err-msg"></p>
-                </label>
-            </div>
-            <div class="password">
-                <label>
-                    <label for="fname">Password</label><br>
-                    <input type="text" id="password" name="fname" placeholder="Enter your password" required>
-                </label>
-            </div>
-            <div class="dob">
-                <label>
-                    <label for="fname">Date of Birth</label><br>
-                    <input type="date" id="dob" name="dob" required>
-                </label>
-            </div>
-            <div class="options">
-                <label>
-                    <label for="fname">Options</label><br>
-                    <select name="select" id="Options required">
-                        <option value="opt-1">Option 1</option>
-                        <option value="opt-1">Option 2</option>
-                        <option value="opt-1">Option 3</option>
-                        <option value="opt-1">Option 4</option>
-                        <option value="opt-1">Option 5</option>
-                    </select>
-                </label>
+        <div class="form">
+            <form action="/" id="form">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email">
+                <p class="err-msg"></p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="input your password">
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" id="date">
+                <label for="options">Options</label>
+                <select name="select" id="options">
+                    <option value="opt-1">Option 1</option>
+                    <option value="opt-2">Option 2</option>
+                    <option value="opt-3">Option 3</option>
+                    <option value="opt-4">Option 4</option>
+                    <option value="opt-5">Option 5</option>
+                </select>
+            </form>
             </div>
             <div class="button">
                 <button class="submit" type="submit" onclick="submit()">SUBMIT</button>
                 <button class="reset" type="reset" onclick="reset()">RESET</button>
                 <button class="cancel" type="cancel" onclick="cancel()">CANCEL</button>
             </div>
-        </form>
+        </div>
         <div class="form-result">
             <h2>
                 Form Output
