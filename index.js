@@ -10,7 +10,7 @@ console.log(validateEmail('my email is anystring@anystring .any'));
 
 const emailInput = document.querySelector('#email');
 const passwordInput = document.querySelector('#password');
-const dob = document.querySelector('#date');
+const dob = document.querySelector('#dob');
 const options = document.querySelector('#options');
 const result = document.querySelector('.result');
 const form = document.querySelector('#form');
