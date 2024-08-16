@@ -158,4 +158,8 @@ label{
         font-weight: 700;
         color: white
     }
+
+    .form input, .form select {
+        width: 100%;
+    }
 }

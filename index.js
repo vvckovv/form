@@ -8,9 +8,9 @@ console.log(validateEmail('Tunmise@anystring.any'));
     
 console.log(validateEmail('my email is anystring@anystring .any'));
 
-const emailInp = document.querySelector('#email');
-const passwordInp = document.querySelector('#password');
-const date = document.querySelector('#date');
+const emailInput = document.querySelector('#email');
+const passwordInput = document.querySelector('#password');
+const dob = document.querySelector('#date');
 const options = document.querySelector('#options');
 const result = document.querySelector('.result');
 const form = document.querySelector('#form');
@@ -19,21 +19,21 @@ let res = []
 function submit() {
   res = [];
   let emailPattern = /^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/
-  if (!emailPattern.test(emailInp.value)){
+  if (!emailPattern.test(emailInput.value)){
       errMsg.innerHTML = 'input correct email';
       errMsg.style.color = 'red';
       errMsg.style.marginTop = '-14px'
   } else {
-      if(emailInp.value){
-          res.push(`"email": "${emailInp.value}"`)
+      if(emailInput.value){
+          res.push(`"email": "${emailInput.value}"`)
           errMsg.innerHTML = '';
           errMsg.style.color = ''
           errMsg.style.marginTop = ''
       } 
-      if(passwordInp.value){
-          res.push(`"password": "${passwordInp.value}"`) 
+      if(passwordInput.value){
+          res.push(`"password": "${passwordInput.value}"`) 
       }
-      if(date.value){
+      if(dob.value){
           res.push(`"date": "${date.value}"`) 
       };
       if(options.value){
